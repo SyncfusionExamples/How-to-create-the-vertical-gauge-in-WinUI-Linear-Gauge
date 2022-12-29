@@ -1,0 +1,44 @@
+﻿<Window
+    x:Class="VerticalGauge.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:VerticalGauge"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:gauge="using:Syncfusion.UI.Xaml.Gauges"
+        mc:Ignorable="d">
+
+    <StackPanel HorizontalAlignment="Center" 
+                VerticalAlignment="Center">
+        <gauge:SfLinearGauge Orientation="Vertical">
+            <gauge:SfLinearGauge.Axis>
+                <gauge:LinearAxis Maximum="50"
+                                  Interval="5">
+                    <gauge:LinearAxis.Ranges>
+                        <gauge:LinearGaugeRange StartValue="0"
+                                                EndValue="20"
+                                                Background="#f44336" />
+                        <gauge:LinearGaugeRange StartValue="20"
+                                                EndValue="35"
+                                                Background="#ff9900" />
+                        <gauge:LinearGaugeRange StartValue="35"
+                                                EndValue="50"
+                                                Background="#4caf4f" />
+                    </gauge:LinearAxis.Ranges>
+                    <gauge:LinearAxis.BarPointers>
+                        <gauge:BarPointer Value="30"
+                                          Offset="-9"
+                                          Background="#0075e3"
+                                          CornerStyle="EndCurve"/>
+                    </gauge:LinearAxis.BarPointers>
+                    <gauge:LinearAxis.MarkerPointers>
+                        <gauge:LinearShapePointer Value="40"
+                                                  IsInteractive="True"
+                                                  Fill="#757575"
+                                                  OffsetPoint="-13,0" />
+                    </gauge:LinearAxis.MarkerPointers>
+                </gauge:LinearAxis>
+            </gauge:SfLinearGauge.Axis>
+        </gauge:SfLinearGauge>
+    </StackPanel>
+</Window>
