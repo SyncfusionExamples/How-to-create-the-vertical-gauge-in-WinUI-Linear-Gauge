@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "VerticalGauge (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "VerticalGauge (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
