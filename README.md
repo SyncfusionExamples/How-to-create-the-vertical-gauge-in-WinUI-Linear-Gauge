@@ -1,10 +1,10 @@
 # How to create the vertical gauge in WinUI Linear Gauge
-This repository contains sample to create the vertical gauge using the Syncfusion WinUI Linear Gauge control.
+This repository contains sample to create the vertical gauge using the [SfLinearGauge](https://help.syncfusion.com/winui/linear-gauge/getting-started) control.
 
 ## Syncfuion controls
 
 This project used the following Syncfusion control(s):
-* [SfLinearGauge](https://www.syncfusion.com/winui-controls/linear-gauge)
+* [Syncfusion WinUI Linear Gauge](https://www.syncfusion.com/winui-controls/linear-gauge)
 
 ## Requirements to run the sample
 
